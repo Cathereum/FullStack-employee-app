@@ -7,6 +7,7 @@
     "server": "nodemon ./bin/www"
   },
   "dependencies": {
+    "@prisma/client": "^4.13.0",
     "concurrently": "^8.0.1",
     "cookie-parser": "~1.4.4",
     "debug": "~2.6.9",
@@ -15,6 +16,9 @@
     "morgan": "~1.9.1"
   },
   "devDependencies": {
-    "nodemon": "^2.0.22"
+    "bcrypt": "^5.1.0",
+    "jsonwebtoken": "^9.0.0",
+    "nodemon": "^2.0.22",
+    "prisma": "^4.13.0"
   }
 }
