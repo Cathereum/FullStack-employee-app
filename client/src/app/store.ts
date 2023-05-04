@@ -7,6 +7,8 @@ export const store = configureStore({
     [api.reducerPath]: api.reducer,
     auth,
   },
+  middleware: (getDefailtMiddleware) =>
+    getDefailtMiddleware().concat(api.middleware),
 });
 
 export type AppDispatch = typeof store.dispatch;
